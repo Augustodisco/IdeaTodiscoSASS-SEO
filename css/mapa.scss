@@ -1,0 +1,23 @@
+/*mapa*/
+
+$socialmedia:(Telegram:rgb(0,255,0),Dropbox:rgb(0,60,155));
+
+
+
+@each $clave, $color in $socialmedia {
+    .#{$clave}{
+        background-color: $color;
+    }
+    
+    
+}
+
+/*mapa-get*/
+
+$headerdiv:(colorcito: blue, altura:fit-content);
+
+header div{
+    background-color: map-get($headerdiv, colorcito );
+    height: map-get($headerdiv, altura);
+
+}
