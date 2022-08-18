@@ -1,0 +1,40 @@
+/*mixins sin parametro*/
+
+@mixin cont-textauto-fontlarger {
+    text-justify: auto;
+    font-size: larger;
+}
+
+@mixin conttrivia-textauto-fontlargercenter {
+    text-justify: auto;
+    font-size: larger;
+    text-align: center;
+    
+}
+
+.containerfont{
+    @include cont-textauto-fontlarger()
+}
+
+.containerfonttrivia{
+    @include conttrivia-textauto-fontlargercenter()
+
+}
+
+
+/*mixin con parametro*/
+@mixin row-color {
+    color: $color
+}
+
+.row{
+    @include row-color(rgb(0,255,0))
+}
+
+
+/*extends*/
+
+/* No supe bien como aplicarlo aca sinceramente, tambien me dio miedo que se me arruinara una parte de la pagina*/
+
+
+
