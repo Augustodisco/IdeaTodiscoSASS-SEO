@@ -1,0 +1,12 @@
+@import "variables";
+@import "header";
+.row {
+    background-color: $colorRow;
+    div {
+        $colorSecundario: crimson;
+        border: solid 10px $colorBorder;
+        h2 {
+            text-decoration: unset;
+        }
+    }
+}
